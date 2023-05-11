@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Roster</title>
+    <h1><center>Roster</center></h1>
+</head>
+
+<script>
+    function table() {
+        var s1 = prompt("Enter subject 1", "Subject 1");
+        var s2 = prompt("Enter subject 2", "Subject 2");
+        var s3 = prompt("Enter subject 3", "Subject 3");
+        var s4 = prompt("Enter subject 4", "Subject 4");
+        var s5 = prompt("Enter subject 5", "Subject 5");
+        var s6 = prompt("Enter subject 6", "Subject 6");
+        var s7 = prompt("Enter subject 7", "Subject 7");
+        var s8 = prompt("Enter subject 8", "Subject 8");
+        var s9 = prompt("Enter subject 9", "Subject 9");
+        var s10 = prompt("Enter subject 10", "Subject 10");
+        var s11 = prompt("Enter subject 11", "Subject 11");
+        var s12 = prompt("Enter subject 12", "Subject 12");
+        var s13 = prompt("Enter subject 13", "Subject 13");
+        var s14 = prompt("Enter subject 14", "Subject 14");
+        var s15 = prompt("Enter subject 15", "Subject 15");
+        var s16 = prompt("Enter subject 16", "Subject 16");
+        var s17 = prompt("Enter subject 17", "Subject 17");
+        var s18 = prompt("Enter subject 18", "Subject 18");
+        
+        var t = document.getElementById('t');
+        var row,col;
+        for(var i = 0; row = t.rows[i]; i++) {
+            for(var j = 0; col = row.cells[j]; j++) {
+                if(i == 0 || j == 0 || j == 4) {
+                    continue;
+                }
+                else {
+                    if(i == 3 && j == 1 || i == 5 && j == 2) {
+                        col.innerHTML = s1;
+                    }
+                    else if(i == 1 && j == 2 || i == 5 && j == 1) {
+                        col.innerHTML = s2;
+                    }
+                    else if (i == 2 && j == 3 || i == 6 && j == 3){
+                        col.innerHTML = s3;
+                    }
+                    else if(i == 1 && j == 5|| i == 4 && j == 1) {
+                        col.innerHTML = s4;
+                    }
+                    else if(i == 2 && j == 5 || i == 4 && j == 2) {
+                        col.innerHTML = s5;
+                    }
+                    else if(i == 2 && j == 6 || i == 4 && j == 5) {
+                        col.innerHTML = s6;
+                    }
+                    else if(i == 1 && j == 1 || i == 3 && j == 5) {
+                        col.innerHTML = s7;
+                    }
+                    else if(i == 3 && j == 3 || i == 5 && j == 3) {
+                        col.innerHTML = s8;
+                    }
+                    else if(i == 6 && j == 1 || i == 2 && j == 7) {
+                        col.innerHTML = s9;
+                    }
+                    else if(i == 3 && j == 7 || i == 5 && j == 7) {
+                        col.innerHTML = s10;
+                    }
+                    else if(i == 3 && j == 2 || i == 6 && j == 5) {
+                        col.innerHTML = s11;
+                    }
+                    else if(i == 6 && j == 2 || i == 4 && j == 6) {
+                        col.innerHTML = s12;
+                    }
+                    else if(i == 2 && j == 2 || i == 4 && j == 3) {
+                        col.innerHTML = s13;
+                    }
+                    else if(i == 6 && j == 6 || i == 4 && j == 7) {
+                        col.innerHTML = s14;
+                    }
+                    else if(i == 1 && j == 3 || i == 6 && j == 7) {
+                        col.innerHTML = s15;
+                    }
+                    else if(i == 2 && j == 1 || i == 5 && j == 6) {
+                        col.innerHTML = s16;
+                    }
+                    else if(i == 5 && j == 5 || i == 1 && j == 6) {
+                        col.innerHTML = s17;
+                    }
+                    else if(i == 3 && j == 6 || i == 1 && j == 7) {
+                        col.innerHTML = s18;
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<body style="background-color:lightyellow; color:brown; border:1px" onload="table()">
+    <table border="5" cellspacing="0" align="center" id="t">
+        <tr>
+            <td align="center" height="50" 
+                width="200"><br>
+                <b>Day/Period</b></br>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>I<br>8:30AM-10:00AM</b>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>II<br>10:00AM-11:30AM</b>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>III<br>11:30AM-1:00PM</b>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>Lunch</b>
+            </td>
+
+            <td align="center" height="50" 
+                width="200">
+                <b>IV<br>2:00PM-3:30PM</b>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>V<br>3:30PM-5:00PM</b>
+            </td>
+            <td align="center" height="50" 
+                width="200">
+                <b>VI<br>5:30PM-7:00PM</b>
+            </td>
+        </tr>
+        
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Monday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Tuesday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Wednesday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Thursday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Friday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Saturday</b></br>
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
